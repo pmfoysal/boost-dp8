@@ -77,9 +77,9 @@ function colorValidate(isValidFunc, value) {
 
 copyTag.addEventListener('click', copyHandler);
 genButton.addEventListener('click', generateHandler());
-redSlide.addEventListener('change', slideHandler);
-greenSlide.addEventListener('change', slideHandler);
-blueSlide.addEventListener('change', slideHandler);
+redSlide.addEventListener('input', slideHandler);
+greenSlide.addEventListener('input', slideHandler);
+blueSlide.addEventListener('input', slideHandler);
 
 function copyHandler() {
    let color = hexInput.value;
