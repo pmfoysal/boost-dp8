@@ -10,6 +10,86 @@
       <title>DOM Project 8</title>
    </head>
    <body>
-      Welcome to DOM Project 08
+      <main>
+         <h1 class="pageTitle">color generator</h1>
+         <section class="section displaySection">
+            <aside class="sectionHeader">
+               <h2 class="sectionTitle">current color</h2>
+               <button class="sectionButton">change</button>
+            </aside>
+            <aside class="displayColor"></aside>
+         </section>
+         <div class="sectionDivider"></div>
+         <section class="section copySection">
+            <aside class="sectionHeader">
+               <h2 class="sectionTitle">copy mode</h2>
+               <button class="sectionButton">copy</button>
+            </aside>
+            <aside class="copyModes">
+               <label class="modeLabel">
+                  <input type="radio" name="mode" class="hexMode" checked />
+                  hex
+               </label>
+               <label class="modeLabel">
+                  <input type="radio" name="mode" class="rgbMode" />
+                  rgb
+               </label>
+               <label class="modeLabel">
+                  <input type="radio" name="mode" class="hslMode" />
+                  hsl
+               </label>
+            </aside>
+         </section>
+         <div class="sectionDivider"></div>
+         <section class="section inputSection">
+            <aside class="sectionHeader">
+               <h2 class="sectionTitle">input color</h2>
+            </aside>
+            <aside class="inputColors">
+               <label class="inputLabel">
+                  hex
+                  <input type="text" name="hexInput" value="#ffffff" spellcheck="false" />
+               </label>
+               <label class="inputLabel">
+                  rgb
+                  <input type="text" name="rgbInput" value="rgb(255, 255, 255)" spellcheck="false" />
+               </label>
+               <label class="inputLabel">
+                  hsl
+                  <input type="text" name="hslInput" value="hsl(0, 0%, 100%)" spellcheck="false" />
+               </label>
+            </aside>
+         </section>
+         <div class="sectionDivider"></div>
+         <section class="section slideSection">
+            <aside class="sectionHeader">
+               <h2 class="sectionTitle">slide color</h2>
+            </aside>
+            <aside class="inputColors">
+               <label class="inputLabel">
+                  <span class="label red">
+                     <p class="name">red</p>
+                     <p class="value">255</p>
+                  </span>
+                  <input type="range" name="redSlide" value="255" min="0" max="255" />
+               </label>
+               <label class="inputLabel">
+                  <span class="label green">
+                     <p class="name">green</p>
+                     <p class="value">255</p>
+                  </span>
+                  <input type="range" name="greenSlide" value="255" min="0" max="255" />
+               </label>
+               <label class="inputLabel">
+                  <span class="label blue">
+                     <p class="name">blue</p>
+                     <p class="value">255</p>
+                  </span>
+                  <input type="range" name="blueSlide" value="255" min="0" max="255" />
+               </label>
+            </aside>
+         </section>
+      </main>
+      <p class="message">Color Copied!</p>
    </body>
 </html>
